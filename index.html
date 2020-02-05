@@ -127,9 +127,28 @@
             </a>
         </h1>
         <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          #用hugo搭建博客的方法 ##下载及准备工作 +在hugo releases页面下载64位的hugo，并放置在硬盘中合适的位置 +将路径添加到path +重启终端后运行'hugo version'验证安装成功
-##生成文章 +进入hugo官网 点击quick start页面 +根据step2-7在终端进行配置 +建立新的站点 &lsquo;hugo new site mysite&rsquo; +添加主题 以ananke为例 &lsquo;&lsquo;&lsquo;cd quickstart git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke '&rsquo;&rsquo; + &lsquo;echo &lsquo;theme = &ldquo;ananke&rdquo;&rsquo; &raquo; config.toml&rsquo; +创建新的文章 &lsquo;hugo new posts/postname.md&rsquo; +创作文章内容 并将draft状态置为false +运行server指令 &lsquo;hugo server -D&rsquo; +配置主题 +ctrl+p搜索config.toml进行配置： +将语言，标题等进行配置
-'&rsquo;
+          #用hugo搭建博客的方法
+下载及准备工作
+在hugo releases页面下载64位的hugo，并放置在硬盘中合适的位置
+将路径添加到path
+重启终端后运行'hugo version'验证安装成功
+生成文章
+进入hugo官网 点击quick start页面
+根据step2-7在终端进行配置
+建立新的站点
+hugo new site mysite
+添加主题 以ananke为例
+cd quickstart git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke &lsquo;echo &lsquo;theme = &ldquo;ananke&rdquo;&rsquo; &raquo; config.toml&rsquo;
+创建新的文章
+hugo new posts/postname.md
+创作文章内容 并将draft状态置为false
+运行server指令
+hugo server -D
+配置主题
+ctrl+p搜索config.toml进行配置：
+将语言，标题等进行配置
+运行'hugo'指令
+将文章推送到远程仓库：即ignore public之后仅推送public到github
         </div>
           <a href="http://example.org/post/hugo/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
         
