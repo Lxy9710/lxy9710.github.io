@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>http://example.org/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 05 Feb 2020 22:07:26 +0800</lastBuildDate>
+    
+	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo</title>
+      <link>http://example.org/post/hugo/</link>
+      <pubDate>Wed, 05 Feb 2020 22:07:26 +0800</pubDate>
+      
+      <guid>http://example.org/post/hugo/</guid>
+      <description>#用hugo搭建博客的方法 ##下载及准备工作 +在hugo releases页面下载64位的hugo，并放置在硬盘中合适的位置 +将路径添加到path +重启终端后运行&#39;hugo version&#39;验证安装成功
+##生成文章 +进入hugo官网 点击quick start页面 +根据step2-7在终端进行配置 +建立新的站点 &amp;lsquo;hugo new site mysite&amp;rsquo; +添加主题 以ananke为例 &amp;lsquo;&amp;lsquo;&amp;lsquo;cd quickstart git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke &#39;&amp;rsquo;&amp;rsquo; + &amp;lsquo;echo &amp;lsquo;theme = &amp;ldquo;ananke&amp;rdquo;&amp;rsquo; &amp;raquo; config.toml&amp;rsquo; +创建新的文章 &amp;lsquo;hugo new posts/postname.md&amp;rsquo; +创作文章内容 并将draft状态置为false +运行server指令 &amp;lsquo;hugo server -D&amp;rsquo; +配置主题 +ctrl+p搜索config.toml进行配置： +将语言，标题等进行配置
+&#39;&amp;rsquo;</description>
+    </item>
+    
+  </channel>
+</rss>
