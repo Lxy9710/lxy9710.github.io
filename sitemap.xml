@@ -3,17 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://y4er.com/posthelloworld/</loc>
+    <lastmod>2020-02-06T01:55:55+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://y4er.com/</loc>
+    <lastmod>2020-02-06T01:55:55+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://y4er.com/post/hugo/</loc>
     <lastmod>2020-02-05T22:07:26+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://y4er.com/post/</loc>
-    <lastmod>2020-02-05T22:07:26+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://y4er.com/</loc>
     <lastmod>2020-02-05T22:07:26+08:00</lastmod>
   </url>
   
