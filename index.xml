@@ -20,5 +20,30 @@
       <description>heyyy! </description>
     </item>
     
+    <item>
+      <title>Hugo</title>
+      <link>https://y4er.com/hugo/</link>
+      <pubDate>Wed, 05 Feb 2020 22:07:26 +0800</pubDate>
+      
+      <guid>https://y4er.com/hugo/</guid>
+      <description>用 hugo 搭建博客的方法 下载及准备工作 在hugo releases页面下载 64 位的 hugo，并放置在硬盘中合适的位置
+将路径添加到 path
+重启终端后运行hugo version验证安装成功
+生成文章 进入 hugo 官网 点击quick start页面
+根据 step2-7 在终端进行配置
+建立新的站点
+hugo new site mysite
+添加主题 以 ananke 为例
+cd quickstart git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke &amp;#39;echo &amp;#39;theme = &amp;#34;ananke&amp;#34;&amp;#39; &amp;gt;&amp;gt; config.toml&amp;#39; 创建新的文章
+hugo new posts/postname.md
+创作文章内容 并将 draft 状态置为 false
+运行 server 指令
+hugo server -D
+配置主题 ctrl+p 搜索 config.toml进行配置：
+将语言，标题等进行配置
+运行hugo指令
+将文章推送到远程仓库：即 ignore public 之后仅推送 public 到 github</description>
+    </item>
+    
   </channel>
 </rss>
