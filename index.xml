@@ -1,48 +1,453 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Y4er的博客 | 伪程序员,信安爱好者,专注于网络攻防和信息安全</title>
-    <link>https://y4er.com/</link>
-    <description>Recent content on Y4er的博客 | 伪程序员,信安爱好者,专注于网络攻防和信息安全</description>
+    <title>小梁的博客 Claire&#39;s blog</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on 小梁的博客 Claire&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 06 Feb 2020 01:55:55 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 07 Feb 2020 12:04:25 +0800</lastBuildDate>
     
-	<atom:link href="https://y4er.com/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Html入门博客</title>
+      <link>http://localhost:1313/post/html%E5%85%A5%E9%97%A8%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Fri, 07 Feb 2020 12:04:25 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/html%E5%85%A5%E9%97%A8%E5%8D%9A%E5%AE%A2/</guid>
+      
+        <description>&lt;h1 id=&#34;html-&#34;&gt;html 入门博客&lt;/h1&gt;
+&lt;p&gt;超文本标记语言（英语：HyperText Markup Language，简称：HTML）是一种用于创建网页的标准标记语言。HTML 是一种基础技术，常与 CSS、JavaScript 一起被众多网站用于设计网页、网页应用程序以及移动应用程序的用户界面。&lt;/p&gt;
+&lt;h2 id=&#34;html--1&#34;&gt;html 历史&lt;/h2&gt;
+&lt;p&gt;1980 年，物理学家蒂姆·伯纳斯-李在欧洲核子研究中心（CERN）在承包工程期间，为使 CERN 的研究人员使用并共享文档，他提出并创建原型系统 ENQUIRE。1989 年，伯纳斯-李在一份备忘录中提出一个基于互联网的超文本系统。他规定 HTML 并在 1990 年底写出浏览器和服务器软件。同年，伯纳斯-李与 CERN 的数据系统工程师罗伯特·卡里奥联合为项目申请资助，但未被 CERN 正式批准。在他的个人笔记中伯纳斯-李列举“一些使用超文本的领域”，并把百科全书列为首位。&lt;/p&gt;
+&lt;h2 id=&#34;html--2&#34;&gt;html 起手式&lt;/h2&gt;
+&lt;p&gt;首先输入！后摁 Tab 键，自动生成 html 起手式。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;html&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;lang&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;en&amp;#34;&lt;/span&gt;&amp;gt;
+  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;head&lt;/span&gt;&amp;gt;
+    &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;meta&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;charset&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;UTF-8&amp;#34;&lt;/span&gt; /&amp;gt;
+    &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;meta&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;viewport&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;content&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;width=device-width, initial-scale=1.0&amp;#34;&lt;/span&gt; /&amp;gt;
+    &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;meta&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;http-equiv&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;X-UA-Compatible&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;content&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ie=edge&amp;#34;&lt;/span&gt; /&amp;gt;
+    &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;title&lt;/span&gt;&amp;gt;Document&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;title&lt;/span&gt;&amp;gt;
+  &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;head&lt;/span&gt;&amp;gt;
+  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;body&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;body&lt;/span&gt;&amp;gt;
+&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;html&lt;/span&gt;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;heading&#34;&gt;章节标签&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;h1&amp;gt;&amp;lt;/h1&amp;gt;&lt;/code&gt; ：标题标签 h 一般从 h1 写至 h6，其中 h1 一般只写一次，用来表示第一个大标题。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;section&amp;gt;&amp;lt;/section&amp;gt;&lt;/code&gt;：章节&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;article&amp;gt;&amp;lt;/article&amp;gt;&lt;/code&gt;：文章&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;p&amp;gt;&amp;lt;/p&amp;gt;&lt;/code&gt;：段落&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;header&amp;gt;&amp;lt;/header&amp;gt;&lt;/code&gt;：头部标签&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;footer&amp;gt;&amp;lt;/footer&amp;gt;&lt;/code&gt;：脚部 底部标签&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;main&amp;gt;&amp;lt;/main&amp;gt;&lt;/code&gt;：主要内容&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;aside&amp;gt;&amp;lt;/aside&amp;gt;&lt;/code&gt;：旁支内容，一般用来写导航，参考资料等。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;heading-1&#34;&gt;全局属性&lt;/h2&gt;
+&lt;p&gt;即所有标签都具有的属性。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;class&lt;/code&gt;：class 的值是一个以空格分隔的元素的类名（classes ）列表。对 class 进行声明时[&lt;code&gt;class=&amp;quot;A&amp;quot;&lt;/code&gt;]会对确切的 A 类对象进行编辑，若是有多个 class 并列则不行。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;contenteditable&lt;/code&gt;: 该标签使得页面可以直接编辑。&lt;/p&gt;
+&lt;p&gt;eg：可实现在页面中直接编辑 style 元素。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;style&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;contenteditable&lt;/span&gt;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;hidden&lt;/code&gt;:将元素隐藏，看不见。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;id&lt;/code&gt;:id 与 class 的区别在于 id 是应用于全页面唯一的，且不报错。所以尽量使用 class 避免 id 的复用。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;style&lt;/code&gt;:元素包含文档的样式信息或者文档的部分内容。默认情况下，该标签的样式信息通常是 CSS 的格式。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;tabindex&lt;/code&gt;：将该属性添加在标签中可以替代鼠标来控制响应顺序。可以取值为：1，2，3，4……-1，0.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;其中-1 表示永远不会被用 Tab 选中；0 表示最后访问；正数值则顺序访问。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;title&lt;/code&gt;：定义文档的标题，显示在浏览器的标题栏或标签页上。它只可以包含文本，若是包含有标签，则包含的任何标签都不会被解释。当 title 过长溢出时：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;whitespace:nowrap&lt;/code&gt;:不换行。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;text-overflow&lt;/code&gt;:忽略溢出部分。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;overflow:hidden&lt;/code&gt;:用省略号替代溢出部分。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;heading-2&#34;&gt;常用的内容标签&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;a href=&amp;quot;&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;&lt;/code&gt;：其中 href 可以取值网址，路径，伪协议。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;em&amp;gt;&amp;lt;/em&amp;gt;&lt;/code&gt;和&lt;code&gt;&amp;lt;strong&amp;gt;&amp;lt;/strong&amp;gt;&lt;/code&gt;:两者都表示强调。em 时语义上的。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;quote&lt;/code&gt;：引用，blockquote 整段引用。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;pre&amp;gt;&amp;lt;/pre&amp;gt;&lt;/code&gt;:保留源格式。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;code&amp;gt;&amp;lt;/code&amp;gt;&lt;/code&gt;:该标签内字体等宽，可放置代码。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;hr&amp;gt;&lt;/code&gt;:水平分割线。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;br&amp;gt;&lt;/code&gt;:换行。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;未完待续。&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
       <title>helloworld</title>
-      <link>https://y4er.com/posthelloworld/</link>
+      <link>http://localhost:1313/post/posthelloworld/</link>
       <pubDate>Thu, 06 Feb 2020 01:55:55 +0800</pubDate>
       
-      <guid>https://y4er.com/posthelloworld/</guid>
-      <description>heyyy! </description>
+      <guid>http://localhost:1313/post/posthelloworld/</guid>
+      
+        <description>&lt;h1 id=&#34;heyyy&#34;&gt;heyyy!&lt;/h1&gt;
+</description>
+      
     </item>
     
     <item>
       <title>Hugo</title>
-      <link>https://y4er.com/hugo/</link>
+      <link>http://localhost:1313/post/hugo/</link>
       <pubDate>Wed, 05 Feb 2020 22:07:26 +0800</pubDate>
       
-      <guid>https://y4er.com/hugo/</guid>
-      <description>用 hugo 搭建博客的方法 下载及准备工作 在hugo releases页面下载 64 位的 hugo，并放置在硬盘中合适的位置
-将路径添加到 path
-重启终端后运行hugo version验证安装成功
-生成文章 进入 hugo 官网 点击quick start页面
-根据 step2-7 在终端进行配置
-建立新的站点
-hugo new site mysite
-添加主题 以 ananke 为例
-cd quickstart git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke &amp;#39;echo &amp;#39;theme = &amp;#34;ananke&amp;#34;&amp;#39; &amp;gt;&amp;gt; config.toml&amp;#39; 创建新的文章
-hugo new posts/postname.md
-创作文章内容 并将 draft 状态置为 false
-运行 server 指令
-hugo server -D
-配置主题 ctrl+p 搜索 config.toml进行配置：
-将语言，标题等进行配置
-运行hugo指令
-将文章推送到远程仓库：即 ignore public 之后仅推送 public 到 github</description>
+      <guid>http://localhost:1313/post/hugo/</guid>
+      
+        <description>&lt;h1 id=&#34;-hugo-&#34;&gt;用 hugo 搭建博客的方法&lt;/h1&gt;
+&lt;h2 id=&#34;heading&#34;&gt;下载及准备工作&lt;/h2&gt;
+&lt;p&gt;在&lt;a href=&#34;https://github.com/gohugoio/hugo/releases&#34;&gt;hugo releases&lt;/a&gt;页面下载 64 位的 hugo，并放置在硬盘中合适的位置&lt;/p&gt;
+&lt;p&gt;将路径添加到 path&lt;/p&gt;
+&lt;p&gt;重启终端后运行&lt;code&gt;hugo version&lt;/code&gt;验证安装成功&lt;/p&gt;
+&lt;h2 id=&#34;heading-1&#34;&gt;生成文章&lt;/h2&gt;
+&lt;p&gt;进入 hugo 官网 点击&lt;a href=&#34;https://gohugo.io/getting-started/quick-start/&#34;&gt;quick start&lt;/a&gt;页面&lt;/p&gt;
+&lt;p&gt;根据 step2-7 在终端进行配置&lt;/p&gt;
+&lt;p&gt;建立新的站点&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;hugo new site mysite&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;即你的 github 站点&lt;/p&gt;
+&lt;p&gt;添加主题 以 ananke 为例&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cd quickstart
+git init
+git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
+&#39;echo &#39;theme = &amp;quot;ananke&amp;quot;&#39; &amp;gt;&amp;gt; config.toml&#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;创建新的文章&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;hugo new posts/postname.md&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;创作文章内容 并将 draft 状态置为 false&lt;/p&gt;
+&lt;p&gt;运行 server 指令&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;hugo server -D&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;heading-2&#34;&gt;配置主题&lt;/h2&gt;
+&lt;p&gt;ctrl+p 搜索 &lt;code&gt;config.toml&lt;/code&gt;进行配置：&lt;/p&gt;
+&lt;p&gt;将语言，标题等进行配置&lt;/p&gt;
+&lt;p&gt;运行&lt;code&gt;hugo&lt;/code&gt;指令&lt;/p&gt;
+&lt;p&gt;将文章推送到远程仓库：即 ignore public 之后仅推送 public 到 github&lt;/p&gt;
+&lt;h2 id=&#34;heading-3&#34;&gt;修改主题&lt;/h2&gt;
+&lt;p&gt;可以在 hugo 给出的官方网站对心仪的主题进行下载，并按照指示 clone 到 themes 即可，不再赘述。&lt;/p&gt;
+&lt;h2 id=&#34;heading-4&#34;&gt;后续再次写作博客&lt;/h2&gt;
+&lt;p&gt;直接在 content 中新建第二篇&lt;/p&gt;
+&lt;p&gt;写完后在 public 目录下依次运行：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hugo
+git add .
+git commit
+git push
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;（遇到的问题与查阅资料）
+如果&lt;code&gt;git push&lt;/code&gt;失败
+运行时报错：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;error: failed to push some refs to &#39;git@github.com:你的远程库名.git&#39;
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: &#39;git pull ...&#39;) before pushing again.
+hint: See the &#39;Note about fast-forwards&#39; in &#39;git push --help&#39; for details.
+
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;则说明本地与远程仓库不同步，可以先运行 git pull 指令：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git pull --rebase origin master
+
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;然后执行推送：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git push -u origin master&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;即可。&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>Math Preview</title>
+      <link>http://localhost:1313/post/math-preview/</link>
+      <pubDate>Mon, 04 Mar 2019 16:01:23 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/math-preview/</guid>
+      
+        <description>&lt;p&gt;&lt;a href=&#34;https://www.intmath.com/cg5/katex-mathjax-comparison.php&#34;&gt;KaTeX and MathJax Comparison Demo, currently processed as KaTex&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;repeating-fractions&#34;&gt;Repeating fractions&lt;/h2&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} \equiv 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\cdots} } } }
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;summation-notation&#34;&gt;Summation notation&lt;/h2&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;sum-of-a-series&#34;&gt;Sum of a Series&lt;/h2&gt;
+
+&lt;p&gt;I broke up the next two examples into separate lines so it behaves better on a mobile phone. That&#39;s why they include \displaystyle.&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\displaystyle\sum_{i=1}^{k+1}i
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\displaystyle= \left(\sum_{i=1}^{k}i\right) +(k+1)
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\displaystyle= \frac{k(k+1)}{2}+k+1
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\displaystyle= \frac{k(k+1)+2(k+1)}{2}
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\displaystyle= \frac{(k+1)(k+2)}{2}
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\displaystyle= \frac{(k+1)((k+1)+1)}{2}
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;product-notation&#34;&gt;Product notation&lt;/h2&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\displaystyle 1 + \frac{q^2}{(1-q)}+\frac{q^6}{(1-q)(1-q^2)}+\cdots = \displaystyle \prod_{j=0}^{\infty}\frac{1}{(1-q^{5j+2})(1-q^{5j+3})}, \displaystyle\text{ for }\lvert q\rvert &lt; 1.
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;inline-math&#34;&gt;Inline math&lt;/h2&gt;
+
+&lt;p&gt;And here is some in-line math: &lt;span  class=&#34;math&#34;&gt;\( k_{n+1} = n^2 + k_n^2 - k_{n-1} \)&lt;/span&gt; , followed by some more text.&lt;/p&gt;
+
+&lt;h2 id=&#34;greek-letters&#34;&gt;Greek Letters&lt;/h2&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\Gamma\ \Delta\ \Theta\ \Lambda\ \Xi\ \Pi\ \Sigma\ \Upsilon\ \Phi\ \Psi\ \Omega
+\alpha\ \beta\ \gamma\ \delta\ \epsilon\ \zeta\ \eta\ \theta\ \iota\ \kappa\ \lambda\ \mu\ \nu\ \xi \ \omicron\ \pi\ \rho\ \sigma\ \tau\ \upsilon\ \phi\ \chi\ \psi\ \omega\ \varepsilon\ \vartheta\ \varpi\ \varrho\ \varsigma\ \varphi
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;arrows&#34;&gt;Arrows&lt;/h2&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\gets\ \to\ \leftarrow\ \rightarrow\ \uparrow\ \Uparrow\ \downarrow\ \Downarrow\ \updownarrow\ \Updownarrow
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\Leftarrow\ \Rightarrow\ \leftrightarrow\ \Leftrightarrow\ \mapsto\ \hookleftarrow
+\leftharpoonup\ \leftharpoondown\ \rightleftharpoons\ \longleftarrow\ \Longleftarrow\ \longrightarrow
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\Longrightarrow\ \longleftrightarrow\ \Longleftrightarrow\ \longmapsto\ \hookrightarrow\ \rightharpoonup
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\rightharpoondown\ \leadsto\ \nearrow\ \searrow\ \swarrow\ \nwarrow
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;symbols&#34;&gt;Symbols&lt;/h2&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\surd\ \barwedge\ \veebar\ \odot\ \oplus\ \otimes\ \oslash\ \circledcirc\ \boxdot\ \bigtriangleup
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\bigtriangledown\ \dagger\ \diamond\ \star\ \triangleleft\ \triangleright\ \angle\ \infty\ \prime\ \triangle
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;calculus&#34;&gt;Calculus&lt;/h2&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\int u \frac{dv}{dx}\,dx=uv-\int \frac{du}{dx}v\,dx
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi i \xi x}
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\oint \vec{F} \cdot d\vec{s}=0
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;lorenz-equations&#34;&gt;Lorenz Equations&lt;/h2&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\begin{aligned} \dot{x} &amp; = \sigma(y-x) \\ \dot{y} &amp; = \rho x - y - xz \\ \dot{z} &amp; = -\beta z + xy \end{aligned}
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;cross-product&#34;&gt;Cross Product&lt;/h2&gt;
+
+&lt;p&gt;This works in KaTeX, but the separation of fractions in this environment is not so good.&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\mathbf{V}_1 \times \mathbf{V}_2 = \begin{vmatrix} \mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\ \frac{\partial X}{\partial u} &amp; \frac{\partial Y}{\partial u} &amp; 0 \\ \frac{\partial X}{\partial v} &amp; \frac{\partial Y}{\partial v} &amp; 0 \end{vmatrix}
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Here&#39;s a workaround: make the fractions smaller with an extra class that targets the spans with &amp;quot;mfrac&amp;quot; class (makes no difference in the MathJax case):&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\mathbf{V}_1 \times \mathbf{V}_2 = \begin{vmatrix} \mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\ \frac{\partial X}{\partial u} &amp; \frac{\partial Y}{\partial u} &amp; 0 \\ \frac{\partial X}{\partial v} &amp; \frac{\partial Y}{\partial v} &amp; 0 \end{vmatrix}
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;accents&#34;&gt;Accents&lt;/h2&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\hat{x}\ \vec{x}\ \ddot{x}
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;stretchy-brackets&#34;&gt;Stretchy brackets&lt;/h2&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\left(\frac{x^2}{y^3}\right)
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;evaluation-at-limits&#34;&gt;Evaluation at limits&lt;/h2&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\left.\frac{x^3}{3}\right|_0^1
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;case-definitions&#34;&gt;Case definitions&lt;/h2&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+f(n) = \begin{cases} \frac{n}{2}, &amp; \text{if } n\text{ is even} \\ 3n+1, &amp; \text{if } n\text{ is odd} \end{cases}
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;maxwells-equations&#34;&gt;Maxwell&#39;s Equations&lt;/h2&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\begin{aligned} \nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &amp; = \frac{4\pi}{c}\vec{\mathbf{j}} \\ \nabla \cdot \vec{\mathbf{E}} &amp; = 4 \pi \rho \\ \nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} &amp; = \vec{\mathbf{0}} \\ \nabla \cdot \vec{\mathbf{B}} &amp; = 0 \end{aligned}
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;These equations are quite cramped. We can add vertical spacing using (for example) [1em] after each line break (\). as you can see here:&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\begin{aligned} \nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &amp; = \frac{4\pi}{c}\vec{\mathbf{j}} \\[1em] \nabla \cdot \vec{\mathbf{E}} &amp; = 4 \pi \rho \\[0.5em] \nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} &amp; = \vec{\mathbf{0}} \\[1em] \nabla \cdot \vec{\mathbf{B}} &amp; = 0 \end{aligned}
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;statistics&#34;&gt;Statistics&lt;/h2&gt;
+
+&lt;p&gt;Definition of combination:&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\frac{n!}{k!(n-k)!} = {^n}C_k
+{n \choose k}
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;fractions-on-fractions&#34;&gt;Fractions on fractions&lt;/h2&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\frac{\frac{1}{x}+\frac{1}{y}}{y-z}
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;nth-root&#34;&gt;n-th root&lt;/h2&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\sqrt[n]{1+x+x^2+x^3+\ldots}
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;matrices&#34;&gt;Matrices&lt;/h2&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\begin{pmatrix} a_{11} &amp; a_{12} &amp; a_{13}\\ a_{21} &amp; a_{22} &amp; a_{23}\\ a_{31} &amp; a_{32} &amp; a_{33} \end{pmatrix}
+\begin{bmatrix} 0 &amp; \cdots &amp; 0 \\ \vdots &amp; \ddots &amp; \vdots \\ 0 &amp; \cdots &amp; 0 \end{bmatrix}
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;punctuation&#34;&gt;Punctuation&lt;/h2&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+f(x) = \sqrt{1+x} \quad (x \ge -1)
+f(x) \sim x^2 \quad (x\to\infty)
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Now with punctuation:&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+f(x) = \sqrt{1+x}, \quad x \ge -1
+f(x) \sim x^2, \quad x\to\infty
+\]&lt;/span&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>This is a very long title This is a very long title This is a very long title This is a very long title This is a very long title</title>
+      <link>http://localhost:1313/post/this-is-a-very-long-title/</link>
+      <pubDate>Wed, 30 Aug 2017 15:43:48 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/this-is-a-very-long-title/</guid>
+      
+        <description>&lt;p&gt;This is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long title&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/post/check/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/check/</guid>
+      
+        <description>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;en&#34;&gt;
+
+&lt;head&gt;
+    &lt;meta charset=&#34;UTF-8&#34;&gt;
+    &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34;&gt;
+    &lt;meta http-equiv=&#34;X-UA-Compatible&#34; content=&#34;ie=edge&#34;&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;h1&gt;&lt;/h1&gt;
+    &lt;section&gt;&lt;/section&gt;
+    &lt;article&gt;&lt;/article&gt;
+    &lt;p&gt;&lt;/p&gt;
+    &lt;header&gt;&lt;/header&gt;
+    &lt;footer&gt;&lt;/footer&gt;
+    &lt;main&gt;&lt;/main&gt;
+    &lt;aside&gt;&lt;/aside&gt;
+    &lt;a href=&#34;&#34;&gt;&lt;/a&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</description>
+      
     </item>
     
   </channel>
