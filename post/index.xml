@@ -75,5 +75,23 @@
 </description>
     </item>
     
+    <item>
+      <title></title>
+      <link>http://localhost:1313/post/url/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/url/</guid>
+      <description>URL：统一资源定位符 URL由协议，域名，端口号，路径，查询参数，锚点组成。
+例如：
+https:(协议)// www. baidu .com（域名）/s?（路径）wd=hello&amp;amp;rsv_spt=1（查询参数）#5（锚点）
+ip   互联网协议，约定了如何定义一台设备。
+  ping (Packet Internet Groper)，因特网包探索器，用于测试网络连接量的程序。Ping发送一个ICMP；回声请求消息给目的地并报告是否收到所希望的ICMP echo （ICMP回声应答）。它是用来检查网络是否通畅或者网络连接速度的命令
+  DNS 域名系统（服务）协议（DNS）是一种分布式网络目录服务，主要用于域名与 IP 地址的相互转换，以及控制因特网的电子邮件的发送。
+  DNS将域名和IP联系在一起。
+  nslookup用于查询DNS的记录，查询域名解析是否正常，在网络故障时用来诊断网络问题。
+  域名 域名与IP可以是一对多或多对一的关系。
+ 域名分为顶级，二级，三级域名。 www.12345.com 中com为顶级域名，12345.com为二级域名，俗称一级，www.12345.com为三级域名，俗称二级。  </description>
+    </item>
+    
   </channel>
 </rss>
