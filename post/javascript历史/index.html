@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>CSS知识总结 - 小梁的博客 Claire&#39;s blog</title>
+  <title>Javascript历史 - 小梁的博客 Claire&#39;s blog</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -23,7 +23,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="claireliang" />
-  <meta name="description" content="浏览器渲染原理 根据html构建html树 根据css构建css树 将两棵树合并成一棵渲染树 layout布局（文档流，盒模型，计算大小和位置） pa" />
+  <meta name="description" content="javascript 概述 JavaScript（简称“JS”） 是一种具有函数优先的轻量级，解释型或即时编译型的高级编程语言。虽然它是作为开发 Web 页面的脚本语言而出" />
 
   <meta name="keywords" content="Hugo, theme, jane" />
 
@@ -35,7 +35,7 @@
 <meta name="generator" content="Hugo 0.62.0" />
 
 
-<link rel="canonical" href="http://localhost:1313/post/css%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/" />
+<link rel="canonical" href="http://localhost:1313/post/javascript%E5%8E%86%E5%8F%B2/" />
 
 
 
@@ -59,23 +59,23 @@
 
 
 
-<meta property="og:title" content="CSS知识总结" />
-<meta property="og:description" content="浏览器渲染原理 根据html构建html树 根据css构建css树 将两棵树合并成一棵渲染树 layout布局（文档流，盒模型，计算大小和位置） pa" />
+<meta property="og:title" content="Javascript历史" />
+<meta property="og:description" content="javascript 概述 JavaScript（简称“JS”） 是一种具有函数优先的轻量级，解释型或即时编译型的高级编程语言。虽然它是作为开发 Web 页面的脚本语言而出" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:1313/post/css%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/" />
-<meta property="article:published_time" content="2020-04-08T22:24:47+08:00" />
-<meta property="article:modified_time" content="2020-04-08T22:24:47+08:00" />
-<meta itemprop="name" content="CSS知识总结">
-<meta itemprop="description" content="浏览器渲染原理 根据html构建html树 根据css构建css树 将两棵树合并成一棵渲染树 layout布局（文档流，盒模型，计算大小和位置） pa">
-<meta itemprop="datePublished" content="2020-04-08T22:24:47&#43;08:00" />
-<meta itemprop="dateModified" content="2020-04-08T22:24:47&#43;08:00" />
-<meta itemprop="wordCount" content="442">
+<meta property="og:url" content="http://localhost:1313/post/javascript%E5%8E%86%E5%8F%B2/" />
+<meta property="article:published_time" content="2020-05-18T14:09:13+08:00" />
+<meta property="article:modified_time" content="2020-05-18T14:09:13+08:00" />
+<meta itemprop="name" content="Javascript历史">
+<meta itemprop="description" content="javascript 概述 JavaScript（简称“JS”） 是一种具有函数优先的轻量级，解释型或即时编译型的高级编程语言。虽然它是作为开发 Web 页面的脚本语言而出">
+<meta itemprop="datePublished" content="2020-05-18T14:09:13&#43;08:00" />
+<meta itemprop="dateModified" content="2020-05-18T14:09:13&#43;08:00" />
+<meta itemprop="wordCount" content="861">
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="CSS知识总结"/>
-<meta name="twitter:description" content="浏览器渲染原理 根据html构建html树 根据css构建css树 将两棵树合并成一棵渲染树 layout布局（文档流，盒模型，计算大小和位置） pa"/>
+<meta name="twitter:title" content="Javascript历史"/>
+<meta name="twitter:description" content="javascript 概述 JavaScript（简称“JS”） 是一种具有函数优先的轻量级，解释型或即时编译型的高级编程语言。虽然它是作为开发 Web 页面的脚本语言而出"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -319,11 +319,11 @@
           <article class="post bg-white">
     
     <header class="post-header">
-      <h1 class="post-title">CSS知识总结</h1>
+      <h1 class="post-title">Javascript历史</h1>
       
       <div class="post-meta">
-        <time datetime="2020-04-08" class="post-time">
-          2020-04-08
+        <time datetime="2020-05-18" class="post-time">
+          2020-05-18
         </time>
         
         
@@ -343,8 +343,9 @@
   <div class="post-toc-content">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#heading">浏览器渲染原理</a></li>
-    <li><a href="#transitionanimation">transition和animation</a></li>
+    <li><a href="#heading">概述</a></li>
+    <li><a href="#heading-1">诞生</a></li>
+    <li><a href="#heading-2">发展历程</a></li>
   </ul>
 </nav>
   </div>
@@ -352,68 +353,23 @@
 
     
     <div class="post-content">
-      <h2 id="heading">浏览器渲染原理</h2>
-<ul>
-<li>根据html构建html树</li>
-<li>根据css构建css树</li>
-<li>将两棵树合并成一棵渲染树</li>
-<li>layout布局（文档流，盒模型，计算大小和位置）</li>
-<li>paint绘制（边框颜色，文字颜色，阴影等画出来）</li>
-<li>compose合成（根据层叠关系展示画面）</li>
-</ul>
-<p>三种更新方式：layout paint composite</p>
-<h2 id="transitionanimation">transition和animation</h2>
-<p>过渡的根本原则：可以实现数值变化就好。</p>
-<ul>
-<li>
-<p>transiton</p>
-<p>可以为一个或者多个用数值表示的CSS属性发生变化时添加动画效果。</p>
-</li>
-</ul>
-<p>语法：</p>
-<pre><code>transform: none;
-/* Function values */
-transform: matrix(1.0, 2.0, 3.0, 4.0, 5.0, 6.0);
-transform: translate(12px, 50%);
-transform: translateX(2em);
-transform: translateY(3in);
-transform: scale(2, 0.5);
-transform: scaleX(2);
-transform: scaleY(0.5);
-transform: rotate(0.5turn);
-transform: skew(30deg, 20deg);
-transform: skewX(30deg);
-transform: skewY(1.07rad);
-transform: matrix3d(1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0);
-transform: translate3d(12px, 50%, 3em);
-transform: translateZ(2px);
-transform: scale3d(2.5, 1.2, 0.3);
-transform: scaleZ(0.3);
-transform: rotate3d(1, 2.0, 3.0, 10deg);
-transform: rotateX(10deg);
-transform: rotateY(10deg);
-transform: rotateZ(10deg);
-transform: perspective(17px);
-
-/* Multiple function values */
-transform: translateX(10px) rotate(10deg) translateY(5px);
-
-/* Global values */
-transform: inherit;
-transform: initial;
-transform: unset;
-
-</code></pre><ul>
-<li>
-<p>animation</p>
-<p>时长：1s或1000ms</p>
-<p>过渡方式：跟transition取值一样。</p>
-<p>次数：3或2.4或infinite</p>
-<p>方向：reverse|alternate|alternate-reverse</p>
-<p>填充模式：none|forwards|backwards|both</p>
-<p>是否暂停：paused|running</p>
-</li>
-</ul>
+      <h1 id="javascript">javascript</h1>
+<h2 id="heading">概述</h2>
+<p>JavaScript（简称“JS”） 是一种具有函数优先的轻量级，解释型或即时编译型的高级编程语言。虽然它是作为开发 Web 页面的脚本语言而出名的，但是它也被用到了很多非浏览器环境中，JavaScript 基于原型编程、多范式的动态脚本语言，并且支持面向对象、命令式和声明式（如函数式编程）风格。</p>
+<h2 id="heading-1">诞生</h2>
+<p><img src="./images/b.jpg" alt="Brendan Eich"></p>
+<p>javascript 由 Brendan Eich 用十天的时间设计出来；设计思路如下：</p>
+<ol>
+<li>借鉴 C 语言的基本语法；</li>
+<li>借鉴 Java 语言的数据类型和内存管理；</li>
+<li>借鉴 Scheme 语言，将函数提升到&quot;第一等公民&rdquo;（first class）的地位；</li>
+<li>借鉴 Self 语言，使用基于原型（prototype）的继承机制。</li>
+</ol>
+<h2 id="heading-2">发展历程</h2>
+<p>​ 1990 年，欧洲核能研究所（CERN）科学家在互联网（Internet）基础上，发明了万维网（World Wide Web），从此可以再网上浏览网页文件。（互联网是线路、协议以及通过 TCP、IP 协议实现数据电子传输的硬件和软件的集合体。Internet 提供的主要服务有万维网 WWW、文件传输 FTP、电子邮件 E-mail、远程登录 Telnet 等。万维网则存在于互联网之上，是由无数个网络站点和网页集合而成，构成了因特网主要的部分。如果把互联网看成是基础，万维网就可以被看成是对互联网的应用）</p>
+<p>​ 1992 年，美国国家超级电脑应用中心（NCSA）开发了人类历史上第一个浏览器 Mosaic。</p>
+<p>​ 1994 年，NCSA 的程序员联合一个风投家成立 Mosaic 通信公司，后来更名为 Netscape。开发面向普通用户的新一代浏览器 Netscape Navigator1.0 版，市场份额一举超过 90%。</p>
+<p>​ Netscape 公司很快发现，浏览器需要一种可以嵌入网页的脚本语言来控制页面行为。因为那时网速很慢而且网费很贵，有些操作不需要在服务端完成，可以把这些操作在浏览器端完成，从而提高效率。他们对这项脚本语言的设想是：功能不需要太强，语法简单，容易学习和部署。 恰逢 Sun 公司 java 问世，两家公司强强联合，NetScript 公司希望借助 Java 语言的声势，Sun 公司则将自己的影响力扩展到浏览器，1995 年，他们雇佣程序员十天时间就设计完成了这种语言的第一版，命名为 JavaScript，对外宣称 JavaScript 是 Java 的补充。</p>
 
     </div>
 
@@ -427,7 +383,7 @@ transform: unset;
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
     <span class="item-content">
-      2020-04-08
+      2020-05-18
       
     </span>
   </p>
@@ -448,22 +404,9 @@ transform: unset;
       
       <nav class="post-nav">
         
-          <a class="prev" href="/post/javascript%E5%8E%86%E5%8F%B2/">
-            
-            <i class="iconfont">
-              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
-  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-  width="18" height="18">
-  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
-</svg>
-
-            </i>
-            <span class="prev-text nav-default">Javascript历史</span>
-            <span class="prev-text nav-mobile">上一篇</span>
-          </a>
         
-          <a class="next" href="/post/html%E9%87%8D%E9%9A%BE%E7%82%B9%E6%A0%87%E7%AD%BE/">
-            <span class="next-text nav-default">Html重难点标签</span>
+          <a class="next" href="/post/css%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/">
+            <span class="next-text nav-default">CSS知识总结</span>
             <span class="prev-text nav-mobile">下一篇</span>
             
             <i class="iconfont">

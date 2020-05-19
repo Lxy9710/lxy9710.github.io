@@ -6,10 +6,19 @@
     <description>Recent content in Posts on 小梁的博客 Claire&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 08 Apr 2020 22:24:47 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2020 14:09:13 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Javascript历史</title>
+      <link>http://localhost:1313/post/javascript%E5%8E%86%E5%8F%B2/</link>
+      <pubDate>Mon, 18 May 2020 14:09:13 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/javascript%E5%8E%86%E5%8F%B2/</guid>
+      <description>javascript 概述 JavaScript（简称“JS”） 是一种具有函数优先的轻量级，解释型或即时编译型的高级编程语言。虽然它是作为开发 Web 页面的脚本语言而出</description>
+    </item>
     
     <item>
       <title>CSS知识总结</title>
