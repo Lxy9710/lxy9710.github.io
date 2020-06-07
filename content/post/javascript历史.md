@@ -19,7 +19,7 @@ javascript 由 Brendan Eich 用十天的时间设计出来；设计思路如下�
 1. 借鉴 C 语言的基本语法；
 2. 借鉴 Java 语言的数据类型和内存管理；
 3. 借鉴 Scheme 语言，将函数提升到"第一等公民"（first class）的地位；
-4. 借鉴 Self 语言，使用基于原型（prototype）的继承机制。
+4. 借鉴 Self 语言，使用基于原型（prototype）的继承机制
 
 ## 发展历程
 
