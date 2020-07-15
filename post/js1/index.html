@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>小梁的博客 Claire&#39;s blog</title>
+  <title>Js对象基本用法 - 小梁的博客 Claire&#39;s blog</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -23,7 +23,8 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="claireliang" />
-  <meta name="description" content="Hugo theme jane example site." />
+  <meta name="description" content="声明对象 let obj = { &#39;name&#39;: &#39;frank&#39;, &#39;age&#39;: 18 } let obj = new Object({&#39;name&#39;: &#39;frank&#39;}) console.log({ &#39;name&#39;: &#39;frank, &#39;age&#39;: 18 }) 键名是字符串，不是标识符，可以包含任意字符 引号可省略，省略之后就只能写标识符 就算引号省略了" />
+
   <meta name="keywords" content="Hugo, theme, jane" />
 
 
@@ -34,8 +35,8 @@
 <meta name="generator" content="Hugo 0.62.0" />
 
 
-<link rel="canonical" href="http://localhost:1313/" />
-<link href="/index.xml" rel="alternate" type="application/rss+xml" title="小梁的博客 Claire&#39;s blog" />
+<link rel="canonical" href="http://localhost:1313/post/js1/" />
+
 
 
 
@@ -58,15 +59,23 @@
 
 
 
-<meta property="og:title" content="小梁的博客 Claire&#39;s blog" />
-<meta property="og:description" content="Hugo theme jane example site." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/" />
-<meta property="og:updated_time" content="2020-07-14T21:32:28+08:00" />
-<meta itemprop="name" content="小梁的博客 Claire&#39;s blog">
-<meta itemprop="description" content="Hugo theme jane example site."><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="小梁的博客 Claire&#39;s blog"/>
-<meta name="twitter:description" content="Hugo theme jane example site."/>
+<meta property="og:title" content="Js对象基本用法" />
+<meta property="og:description" content="声明对象 let obj = { &#39;name&#39;: &#39;frank&#39;, &#39;age&#39;: 18 } let obj = new Object({&#39;name&#39;: &#39;frank&#39;}) console.log({ &#39;name&#39;: &#39;frank, &#39;age&#39;: 18 }) 键名是字符串，不是标识符，可以包含任意字符 引号可省略，省略之后就只能写标识符 就算引号省略了" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/js1/" />
+<meta property="article:published_time" content="2020-07-14T21:32:28+08:00" />
+<meta property="article:modified_time" content="2020-07-14T21:32:28+08:00" />
+<meta itemprop="name" content="Js对象基本用法">
+<meta itemprop="description" content="声明对象 let obj = { &#39;name&#39;: &#39;frank&#39;, &#39;age&#39;: 18 } let obj = new Object({&#39;name&#39;: &#39;frank&#39;}) console.log({ &#39;name&#39;: &#39;frank, &#39;age&#39;: 18 }) 键名是字符串，不是标识符，可以包含任意字符 引号可省略，省略之后就只能写标识符 就算引号省略了">
+<meta itemprop="datePublished" content="2020-07-14T21:32:28&#43;08:00" />
+<meta itemprop="dateModified" content="2020-07-14T21:32:28&#43;08:00" />
+<meta itemprop="wordCount" content="588">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Js对象基本用法"/>
+<meta name="twitter:description" content="声明对象 let obj = { &#39;name&#39;: &#39;frank&#39;, &#39;age&#39;: 18 } let obj = new Object({&#39;name&#39;: &#39;frank&#39;}) console.log({ &#39;name&#39;: &#39;frank, &#39;age&#39;: 18 }) 键名是字符串，不是标识符，可以包含任意字符 引号可省略，省略之后就只能写标识符 就算引号省略了"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -226,7 +235,7 @@
   <ul id="menu" class="menu">
     
     
-        <li class="menu-item active">
+        <li class="menu-item">
         
           
           
@@ -307,158 +316,210 @@
     <main id="main" class="main bg-llight">
       <div class="content-wrapper">
         <div id="content" class="content container">
-          
-<section id="posts" class="posts">
-  
-  
+          <article class="post bg-white">
     
-  
-  
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
+    <header class="post-header">
+      <h1 class="post-title">Js对象基本用法</h1>
       
-      <a class="post-link" href="/post/posthelloworld/">helloworld</a>
-    </h1>
+      <div class="post-meta">
+        <time datetime="2020-07-14" class="post-time">
+          2020-07-14
+        </time>
+        
+        
+
+        
+        
+
+        
+        
+      </div>
+    </header>
+
     
-    <div class="post-meta">
-      <time datetime="2020-02-06" class="post-time">
-        2020-02-06
-      </time>
-      
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
     
-    <div class="post-summary">
-      heyyy! 
-    </div>
-    <div class="read-more">
-      <a href="/post/posthelloworld/" class="read-more-link">阅读全文</a>
-    </div>
-    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#heading-2">删除</a></li>
+    <li><a href="#heading-3">查看</a>
+      <ul>
+        <li><a href="#heading-4">直接赋值</a></li>
+        <li><a href="#heading-5">批量赋值</a></li>
+        <li><a href="#heading-6">改变共有属性</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
   </div>
-</article>
+</div>
 
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/hugo/">Hugo</a>
-    </h1>
     
-    <div class="post-meta">
-      <time datetime="2020-02-05" class="post-time">
-        2020-02-05
-      </time>
-      
-      
-      
-      
+    <div class="post-content">
+      <h1 id="heading">声明对象</h1>
+<p><code>let obj = { 'name': 'frank', 'age': 18 }</code></p>
+<p><code>let obj = new Object({'name': 'frank'})</code></p>
+<p><code>console.log({ 'name': 'frank, 'age': 18 })</code></p>
+<ul>
+<li>键名是字符串，不是标识符，可以包含任意字符</li>
+<li>引号可省略，省略之后就只能写标识符</li>
+<li>就算引号省略了，键名也还是字符串（重要）</li>
+<li>&lsquo;key&rsquo;:value 即 &lsquo;属性名&rsquo;：属性值</li>
+<li>可以用[]将属性名括起来，这样属性名可以是变量。不加 []的属性名会自动变成字符串，而加了的会当作变量求值。</li>
+</ul>
+<h1 id="heading-1">增删改查</h1>
+<h2 id="heading-2">删除</h2>
+<ul>
+<li>
+<p>delete obj.xxx 或 delete obj[&lsquo;xxx&rsquo;]</p>
+<p>即可删除 obj 的 xxx 属性</p>
+</li>
+<li>
+<p>&lsquo;xxx&rsquo; in obj === false</p>
+<p>含有属性名，但是值为 undefined</p>
+</li>
+<li>
+<p>&lsquo;xxx&rsquo; in obj &amp;&amp; obj.xxx === undefined</p>
+<p>注意 obj.xxx === undefined 不能断定 &lsquo;xxx&rsquo; 是否为 obj 的属性</p>
+</li>
+</ul>
+<h2 id="heading-3">查看</h2>
+<ul>
+<li>
+<p>查看自身所有属性
+<code>Object.keys(obj)</code></p>
+</li>
+<li>
+<p>查看自身+共有属性
+<code>console.dir(obj)</code></p>
+</li>
+<li>
+<p>或者自己依次用 <code>Object.keys</code> 打印出 <code>obj.__proto__</code>
+判断一个属性是自身的还是共有的
+<code>obj.hasOwnProperty('toString')</code></p>
+</li>
+<li>
+<p>查看某一个属性</p>
+<p>中括号语法：<code>obj['key']</code></p>
+<p>点语法：<code>obj.key</code></p>
+</li>
+<li>
+<p>写</p>
+</li>
+</ul>
+<h3 id="heading-4">直接赋值</h3>
+<pre><code>let obj = {name: 'frank'} // name 是字符串
+obj.name = 'frank' // name 是字符串
+obj['name'] = 'frank'
+obj[name] = 'frank' // 错，因 name 值不确定
+obj['na'+'me'] = 'frank'
+let key = 'name'; obj[key] = 'frank'
+let key = 'name'; obj.key = 'frank' // 错,因为 obj.key 等价于 obj['key']
+</code></pre><h3 id="heading-5">批量赋值</h3>
+<p><code>Object.assign(obj, {age: 18, gender: 'man'})</code></p>
+<h3 id="heading-6">改变共有属性</h3>
+<p>修改或增加共有属性</p>
+<pre><code>let obj = {}, obj2 = {} // 共有 toString
+obj.toString = 'xxx' //只会在改 obj 自身属性
+obj2.toString //还是在原型上
+</code></pre><p>修改原型上的属性</p>
+<pre><code>obj.__proto__.toString = 'xxx' // 不推荐用 __proto__
+Object.prototype.toString = 'xxx'
+</code></pre><p>修改隐藏属性</p>
+<ul>
+<li>使用<strong>proto</strong></li>
+</ul>
+<pre><code>let obj = {name:'frank'}
+let obj2 = {name: 'jack'}
+let common = {kind: 'human'}
+obj.__proto__ = common
+obj2.__proto__ = common
+
+</code></pre><ul>
+<li>使用 create</li>
+</ul>
+<pre><code>let obj = Object.create(common)
+obj.name = 'frank'
+let obj2 = Object.create(common)
+obj2.name = 'jack'
+</code></pre><p>ES6 推荐使用 create</p>
+<ul>
+<li>ps：<code>'name' in obj</code>和<code>obj.hasOwnProperty('name')</code>的区别在于，前者判断 obj 含不含属性名'name&rsquo;，后者判断 name 是不是 obj 自有的属性。</li>
+</ul>
+
     </div>
-  </header>
-  
-  <div class="post-content">
+
     
-    <div class="post-summary">
-      用 hugo 搭建博客的方法 下载及准备工作 在hugo releases页面下载 64 位的 hugo，并放置在硬盘中合适的位置 将路径添加到 path 重启终端后运行hug
-    </div>
-    <div class="read-more">
-      <a href="/post/hugo/" class="read-more-link">阅读全文</a>
-    </div>
     
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">claireliang</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+      2020-07-14
       
-      <a class="post-link" href="/post/check/"></a>
-    </h1>
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+
     
-    <div class="post-meta">
-      <time datetime="0001-01-01" class="post-time">
-        0001-01-01
-      </time>
-      
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
     
-    <div class="post-summary">
-       Document      
+
+    <footer class="post-footer">
       
-    </div>
-    <div class="read-more">
-      <a href="/post/check/" class="read-more-link">阅读全文</a>
-    </div>
+
+      
+      <nav class="post-nav">
+        
+        
+          <a class="next" href="/post/js%E8%AF%AD%E6%B3%95/">
+            <span class="next-text nav-default">Js语法</span>
+            <span class="prev-text nav-mobile">下一篇</span>
+            
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+            </i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
     
-  </div>
-</article>
 
   
-</section>
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-  <nav class="pagination">
-    <ul>
-      
-      <li >
-        <a href="/">1</a>
-      </li>
-      
-      <li >
-        <a href="/page/2/">2</a>
-      </li>
-      
-      <li  class="active" >
-        <a href="/page/3/">3</a>
-      </li>
-      
-      <li >
-        <a href="/page/4/">4</a>
-      </li>
-      
-    </ul>
-  </nav>
-
-  
-  
-
-
-
-
 
         </div>
       </div>

@@ -6,10 +6,195 @@
     <description>Recent content on 小梁的博客 Claire&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 18 May 2020 14:09:13 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jul 2020 21:32:28 +0800</lastBuildDate>
     
         <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Js对象基本用法</title>
+      <link>http://localhost:1313/post/js1/</link>
+      <pubDate>Tue, 14 Jul 2020 21:32:28 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/js1/</guid>
+      
+        <description>&lt;h1 id=&#34;heading&#34;&gt;声明对象&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;let obj = { &#39;name&#39;: &#39;frank&#39;, &#39;age&#39;: 18 }&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;let obj = new Object({&#39;name&#39;: &#39;frank&#39;})&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;console.log({ &#39;name&#39;: &#39;frank, &#39;age&#39;: 18 })&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;键名是字符串，不是标识符，可以包含任意字符&lt;/li&gt;
+&lt;li&gt;引号可省略，省略之后就只能写标识符&lt;/li&gt;
+&lt;li&gt;就算引号省略了，键名也还是字符串（重要）&lt;/li&gt;
+&lt;li&gt;&amp;lsquo;key&amp;rsquo;:value 即 &amp;lsquo;属性名&amp;rsquo;：属性值&lt;/li&gt;
+&lt;li&gt;可以用[]将属性名括起来，这样属性名可以是变量。不加 []的属性名会自动变成字符串，而加了的会当作变量求值。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;heading-1&#34;&gt;增删改查&lt;/h1&gt;
+&lt;h2 id=&#34;heading-2&#34;&gt;删除&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;delete obj.xxx 或 delete obj[&amp;lsquo;xxx&amp;rsquo;]&lt;/p&gt;
+&lt;p&gt;即可删除 obj 的 xxx 属性&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;lsquo;xxx&amp;rsquo; in obj === false&lt;/p&gt;
+&lt;p&gt;含有属性名，但是值为 undefined&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;lsquo;xxx&amp;rsquo; in obj &amp;amp;&amp;amp; obj.xxx === undefined&lt;/p&gt;
+&lt;p&gt;注意 obj.xxx === undefined 不能断定 &amp;lsquo;xxx&amp;rsquo; 是否为 obj 的属性&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;heading-3&#34;&gt;查看&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;查看自身所有属性
+&lt;code&gt;Object.keys(obj)&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;查看自身+共有属性
+&lt;code&gt;console.dir(obj)&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;或者自己依次用 &lt;code&gt;Object.keys&lt;/code&gt; 打印出 &lt;code&gt;obj.__proto__&lt;/code&gt;
+判断一个属性是自身的还是共有的
+&lt;code&gt;obj.hasOwnProperty(&#39;toString&#39;)&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;查看某一个属性&lt;/p&gt;
+&lt;p&gt;中括号语法：&lt;code&gt;obj[&#39;key&#39;]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;点语法：&lt;code&gt;obj.key&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;写&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;heading-4&#34;&gt;直接赋值&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;let obj = {name: &#39;frank&#39;} // name 是字符串
+obj.name = &#39;frank&#39; // name 是字符串
+obj[&#39;name&#39;] = &#39;frank&#39;
+obj[name] = &#39;frank&#39; // 错，因 name 值不确定
+obj[&#39;na&#39;+&#39;me&#39;] = &#39;frank&#39;
+let key = &#39;name&#39;; obj[key] = &#39;frank&#39;
+let key = &#39;name&#39;; obj.key = &#39;frank&#39; // 错,因为 obj.key 等价于 obj[&#39;key&#39;]
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;heading-5&#34;&gt;批量赋值&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;Object.assign(obj, {age: 18, gender: &#39;man&#39;})&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;heading-6&#34;&gt;改变共有属性&lt;/h3&gt;
+&lt;p&gt;修改或增加共有属性&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;let obj = {}, obj2 = {} // 共有 toString
+obj.toString = &#39;xxx&#39; //只会在改 obj 自身属性
+obj2.toString //还是在原型上
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;修改原型上的属性&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;obj.__proto__.toString = &#39;xxx&#39; // 不推荐用 __proto__
+Object.prototype.toString = &#39;xxx&#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;修改隐藏属性&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;使用&lt;strong&gt;proto&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;let obj = {name:&#39;frank&#39;}
+let obj2 = {name: &#39;jack&#39;}
+let common = {kind: &#39;human&#39;}
+obj.__proto__ = common
+obj2.__proto__ = common
+
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;使用 create&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;let obj = Object.create(common)
+obj.name = &#39;frank&#39;
+let obj2 = Object.create(common)
+obj2.name = &#39;jack&#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;ES6 推荐使用 create&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ps：&lt;code&gt;&#39;name&#39; in obj&lt;/code&gt;和&lt;code&gt;obj.hasOwnProperty(&#39;name&#39;)&lt;/code&gt;的区别在于，前者判断 obj 含不含属性名&#39;name&amp;rsquo;，后者判断 name 是不是 obj 自有的属性。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>Js语法</title>
+      <link>http://localhost:1313/post/js%E8%AF%AD%E6%B3%95/</link>
+      <pubDate>Mon, 08 Jun 2020 04:23:58 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/js%E8%AF%AD%E6%B3%95/</guid>
+      
+        <description>&lt;h1 id=&#34;js&#34;&gt;js语法&lt;/h1&gt;
+&lt;h2 id=&#34;heading&#34;&gt;表达式和语句&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;一般来说 表达式有值；而语句是用来改变环境的。但也并不绝对。&lt;/li&gt;
+&lt;li&gt;表达式，是由数字、算符、数字分组符号（括号）、自由变量和约束变量等以能求得数值的有意义排列方法所得的组合。&lt;/li&gt;
+&lt;li&gt;js大小写敏感&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;heading-1&#34;&gt;标识符&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;第一个字符，可以是Unicode字母或$或_或中文，后面的字符还可以有数字&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;变量名是标识符&lt;/p&gt;
+&lt;p&gt;eg：var _=1;var$=2;
+var 啊=1;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;if-else&#34;&gt;if else语句&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;语法：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;if(表达式){语句1}else{语句2}
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在{}省略时，if只对后面的最近的一个语句有效（两个语句中间是“，”的话，算一语句。）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;if和else中只有一个语句的时候可以用? :表达式简化。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;amp;&amp;amp;语句 替代if（）语句。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;短路逻辑 A||B||C||D 取第一个真值或D，并不会取true/false。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;switch-break&#34;&gt;switch break语句&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;eg:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;switch(fruit){
+    case &amp;quot;banana&amp;quot;://......
+    break;
+    &amp;quot;apple&amp;quot;://
+    ......
+    break;
+    default:
+    //......
+}
+
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;break:在当前case跳出switch&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;while&#34;&gt;while&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;while(表达式){语句}&lt;/code&gt;
+判断表达式的真假，为真时执行语句，为假时执行后面的语句。执行完后再次判断表达式真假。与do……while类似，不常用。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;for&#34;&gt;for循环&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt; for(语句1;表达式2;语句3;){循环体}&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;先执行语句1，然后判断表达式2：为真，执行循环体，然后执行语句3；为假，跳出循环。&lt;/p&gt;
+&lt;h2 id=&#34;breakcontinue&#34;&gt;break&amp;amp;continue&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;break:跳出整个循环（仅最最近的一个。）&lt;/li&gt;
+&lt;li&gt;continue：按照next理解，仅停止当前语句 执行下一个。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;label&#34;&gt;label&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;在firefox中 foo：1不是一个对象。{foo:1}只是一个label。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      
+    </item>
     
     <item>
       <title>Javascript历史</title>
